@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+  .input-underline {
+    border: none;
+    border-bottom: 1px solid #E5E5E5;
+    border-radius: 0;
+    outline: none;
+    background: transparent;
+    transition: border-color 0.4s ease;
+    padding: 12px 0;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
+    color: #111111;
+    letter-spacing: 0.03em;
+  }
+  .input-underline::placeholder {
+    color: #9A9A9A;
+    font-weight: 300;
+  }
+  .input-underline:focus {
+    border-bottom-color: #111111;
+  }
+}
